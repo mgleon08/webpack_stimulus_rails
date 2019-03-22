@@ -1,4 +1,7 @@
-<h1> Hi </h1>
+<div data-controller="user">
+  <h1 data-target="user.output"></h1>
+</div>
+
 <% @users.each do |user| %>
   <h1><%= user.id %>. <%= user.name %></h1>
 <% end %>
